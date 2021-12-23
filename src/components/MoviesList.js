@@ -5,7 +5,7 @@ function MoviesList(props) {
     return (
         <ul className={classes['movies-list']}>
             {props.movies.map((movie)=>{
-                return <Movie title={movie.title} releaseDate={movie.releaseDate} openingText={movie.openingText}></Movie>
+                return <Movie id={movie.episode_id} title={movie.title} releaseDate={movie.release_date} openingText={movie.opening_crawl}></Movie>
 
             })}
         </ul>
